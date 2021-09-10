@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'fake_persian_name',
   packages = ['fake_persian_name'],
-  version = '1.0.0',
+  version = '1.0.1',
   license='MIT',
   description = 'A package to generate fake persian name',
   author = 'Erfan Rahmati',
