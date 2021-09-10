@@ -3,3 +3,5 @@ setup.cfg
 setup.py
 fake_persian_name/__init__.py
 fake_persian_name/fake_name.py
+fake_persian_name/name_boy.txt
+fake_persian_name/name_girl.txt
