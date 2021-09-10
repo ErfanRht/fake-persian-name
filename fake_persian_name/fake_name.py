@@ -1,4 +1,6 @@
+from importlib import resources
 import random
+import io
 import os
 
 def generate_name(gender):
@@ -12,16 +14,16 @@ def generate_name(gender):
         return None
 
     basedir = os.path.abspath(os.path.dirname(__file__))
-    files = [os.path.join(basedir, "name_boy.txt"), os.path.join(basedir, "name_girl.txt"),]
+    files = ["name_boy.txt","name_girl.txt"]
     def first_name(gender):
-        with open(files[gender], 'r') as file:
+        with resources.open_text('fake_persian_name',files[gender]) as file:
             names = file.read().split("\n")
         first_name = names[random.randrange(len(names))]
 
         return first_name
     
     def last_name():
-        with open(files[random.randint(0, 1)]) as file:
+        with resources.open_text(files[gender], resources) as file:
             names = file.read().split("\n")
         last_name = names[random.randrange(len(names))]+"ی"
 
@@ -32,3 +34,5 @@ def generate_name(gender):
     name = first + " " + last
 
     return name
+
+generate_name("male")
