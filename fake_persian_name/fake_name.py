@@ -34,5 +34,3 @@ def generate_name(gender):
     name = first + " " + last
 
     return name
-
-generate_name("male")
