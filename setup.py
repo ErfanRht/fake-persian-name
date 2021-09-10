@@ -8,7 +8,7 @@ setup(
   author = 'Erfan Rahmati',
   author_email = 'ErfanRht2005@gmail.com',
   url = 'https://github.com/ErfanRht/fake-persian-name',
-  download_url = 'https://github.com/ErfanRht/fake-persian-name/archive/v_01.tar.gz',
+  download_url = 'https://github.com/ErfanRht/fake_persian_name/blob/master/dist/fake_persian_name-1.0.0.tar.gz',
   keywords = ['fake', 'persian', 'name', 'persian name', 'fake name'],
   classifiers=[
     'Development Status :: 3 - Alpha',
