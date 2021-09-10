@@ -10,9 +10,6 @@ setup(
   url = 'https://github.com/ErfanRht/fake-persian-name',
   download_url = 'https://github.com/ErfanRht/fake-persian-name/archive/v_01.tar.gz',
   keywords = ['fake', 'persian', 'name', 'persian name', 'fake name'],
-  install_requires=[
-          'random>=2.4',
-      ],
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
