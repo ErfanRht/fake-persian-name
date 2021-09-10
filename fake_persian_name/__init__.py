@@ -1,0 +1,1 @@
+from fake_pesrian_name.fake_name import FakePersianName
