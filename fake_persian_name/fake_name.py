@@ -11,7 +11,7 @@ def generate_name(gender):
     elif gender == "random":
         gender = random.randint(0, 1)
     else:
-        return None
+        return "The entered argument is not true. Please read the documentation of this package at PYPI.org"
 
     basedir = os.path.abspath(os.path.dirname(__file__))
     files = ["name_boy.txt","name_girl.txt"]
@@ -23,7 +23,7 @@ def generate_name(gender):
         return first_name
     
     def last_name():
-        with resources.open_text(files[gender], resources) as file:
+        with resources.open_text('fake_persian_name',files[gender]) as file:
             names = file.read().split("\n")
         last_name = names[random.randrange(len(names))]+"ی"
 
