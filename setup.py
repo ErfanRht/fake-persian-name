@@ -8,7 +8,6 @@ setup(
   license='MIT',
   description = 'A small Python library to generate fake Persian name.',
   long_description = open(join(abspath(dirname(__file__)), "README.md")).read(),
-  long_description_content_type="text/markdown",
   author = 'Erfan Rahmati',
   author_email = 'ErfanRht2005@gmail.com',
   url = 'https://github.com/ErfanRht/fake_persian_name',
