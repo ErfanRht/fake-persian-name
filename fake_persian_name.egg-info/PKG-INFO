@@ -1,13 +1,12 @@
 Metadata-Version: 2.1
 Name: fake-persian-name
-Version: 1.2.0
+Version: 1.2.1
 Summary: A small Python library to generate fake Persian name.
 Home-page: https://github.com/ErfanRht/fake-persian-name
 Author: Erfan Rahmati
 Author-email: ErfanRht2005@gmail.com
 License: MIT
-Download-URL: https://github.com/ErfanRht/fake-persian-name/blob/master/dist/fake-persian-name-1.2.0.tar.gz
-Project-URL: HomePage, https://pypi.org/project/fake-persian-name/
+Download-URL: https://github.com/ErfanRht/fake-persian-name/blob/master/dist/fake-persian-name-1.2.1.tar.gz
 Project-URL: Documentation, https://pypi.org/project/fake-persian-name/
 Project-URL: Source, https://github.com/ErfanRht/fake-persian-name/
 Keywords: fake,persian,name,persian name,fake name,fake persian name
