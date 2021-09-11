@@ -44,4 +44,4 @@ This project is licensed under the [MIT License](https://github.com/ErfanRht/fak
 
 ## Author
 
-This Flutter package is developed by [Erfan Rahmati](https://github.com/ErfanRht).
+This Python library is developed by [Erfan Rahmati](https://github.com/ErfanRht).
