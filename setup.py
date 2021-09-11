@@ -1,21 +1,21 @@
 from distutils.core import setup
 from os.path import dirname, join, abspath
 
-with open('README.md', 'r') as f:
-    readme = f.read()
+with open('./README.md', 'r') as f:
+    long_description = f.read()
   
 setup(
   name = 'fake_persian_name',
   packages = ['fake_persian_name'],
-  version = '1.1.6',
+  version = '1.1.7',
   license='MIT',
   description = 'A small Python library to generate fake Persian name.',
-  long_description = readme,
-  long_description_content_type='text/markdown',
+  long_description=long_description,
+  long_description_content_type = 'text/markdown',
   author = 'Erfan Rahmati',
   author_email = 'ErfanRht2005@gmail.com',
   url = 'https://github.com/ErfanRht/fake_persian_name',
-  download_url = 'https://github.com/ErfanRht/fake_persian_name/blob/master/dist/fake_persian_name-1.1.6.tar.gz',
+  download_url = 'https://github.com/ErfanRht/fake_persian_name/blob/master/dist/fake_persian_name-1.1.7.tar.gz',
   keywords = ['fake', 'persian', 'name', 'persian name', 'fake name'],
   classifiers=[
     'Development Status :: 3 - Alpha',
