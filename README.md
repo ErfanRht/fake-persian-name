@@ -54,7 +54,7 @@ Please file any issues, bugs or feature request [here](https://github.com/ErfanR
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/ErfanRht/fake_persian_name/blob/master/LICENSE)
+This project is licensed under the [MIT License](https://github.com/ErfanRht/fake_persian_name/blob/master/LICENSE.txt)
 
 ## Author
 
