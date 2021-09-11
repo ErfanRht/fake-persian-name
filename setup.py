@@ -6,7 +6,7 @@ with open('./README.md', 'r') as f:
 setup(
   name='fake-persian-name',
   packages=['fake_persian_name'],
-  version='1.1.8',
+  version='1.1.9',
   license='MIT',
   description='A small Python library to generate fake Persian name.',
   long_description=long_description,
@@ -14,7 +14,7 @@ setup(
   author='Erfan Rahmati',
   author_email='ErfanRht2005@gmail.com',
   url='https://github.com/ErfanRht/fake-persian-name',
-  download_url='https://github.com/ErfanRht/fake-persian-name/blob/master/dist/fake-persian-name-1.1.8.tar.gz',
+  download_url='https://github.com/ErfanRht/fake-persian-name/blob/master/dist/fake-persian-name-1.1.9.tar.gz',
   keywords=['fake', 'persian', 'name', 'persian name', 'fake name', 'fake persian name'],
   classifiers=[
     'Development Status :: 3 - Alpha',
