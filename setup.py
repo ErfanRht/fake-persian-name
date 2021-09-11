@@ -1,22 +1,21 @@
-from distutils.core import setup
-from os.path import dirname, join, abspath
+from setuptools import setup
 
 with open('./README.md', 'r') as f:
     long_description = f.read()
-  
+
 setup(
-  name = 'fake_persian_name',
-  packages = ['fake_persian_name'],
-  version = '1.1.7',
+  name='fake-persian-name',
+  packages=['fake_persian_name'],
+  version='1.1.8',
   license='MIT',
-  description = 'A small Python library to generate fake Persian name.',
+  description='A small Python library to generate fake Persian name.',
   long_description=long_description,
-  long_description_content_type = 'text/markdown',
-  author = 'Erfan Rahmati',
-  author_email = 'ErfanRht2005@gmail.com',
-  url = 'https://github.com/ErfanRht/fake_persian_name',
-  download_url = 'https://github.com/ErfanRht/fake_persian_name/blob/master/dist/fake_persian_name-1.1.7.tar.gz',
-  keywords = ['fake', 'persian', 'name', 'persian name', 'fake name'],
+  long_description_content_type='text/markdown',
+  author='Erfan Rahmati',
+  author_email='ErfanRht2005@gmail.com',
+  url='https://github.com/ErfanRht/fake-persian-name',
+  download_url='https://github.com/ErfanRht/fake-persian-name/blob/master/dist/fake-persian-name-1.1.8.tar.gz',
+  keywords=['fake', 'persian', 'name', 'persian name', 'fake name', 'fake persian name'],
   classifiers=[
     'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
@@ -32,12 +31,12 @@ setup(
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
   ],
-  install_requires= [
+  install_requires=[
     "requests"
   ],
   project_urls={
         'Documentation': 'https://requests.readthedocs.io',
-        'Source': 'https://pypi.org/project/fake_persian_name/',
+        'Source': 'https://pypi.org/project/fake-persian-name/',
     },
   include_package_data=True,
 )
