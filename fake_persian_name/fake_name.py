@@ -12,27 +12,29 @@ def generate_name(gender):
     elif gender == "random":
         gender = random.randint(0, 1)
     else:
-        return "The entered argument is not true. Please read the documentation of this package at PYPI.org"
+        return None
 
     url = "https://raw.githubusercontent.com/jadijadi/persianwords/master/"
-    files = ["name_boy.txt","name_girl.txt"]
+
+    file = ["name_boy.txt","name_girl.txt"]
+    suffix = ["زاده", "پور" ,"" ,"خوانی", "صفت",  ""]
+
     def first_name(gender):
         """
         with resources.open_text('fake_persian_name',files[gender]) as file:
             names = file.read().split("\n")
         """
-        names = (requests.get(url+files[gender]).text).split("\n")
+        names = (requests.get(url+file[gender]).text).split("\n")
         first_name = names[random.randrange(len(names))]
 
         return first_name
     
     def last_name():
-        """
-        with resources.open_text('fake_persian_name',files[gender]) as file:
-            names = file.read().split("\n")
-        """
-        names = (requests.get(url+files[gender]).text).split("\n")
-        last_name = names[random.randrange(len(names))]+"ی"
+        names = (requests.get(url+file[gender]).text).split("\n")
+        last_name = names[random.randrange(len(names))]
+        if last_name[len(last_name)-1] == "ی" or last_name[len(last_name)-1] == "ه":
+            last_name = last_name + ("ی" if random.randrange(2) != 1 else "")
+        last_name = last_name + " " + suffix[random.randrange(len(suffix))]
 
         return last_name
     
