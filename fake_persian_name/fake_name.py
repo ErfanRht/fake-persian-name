@@ -1,4 +1,5 @@
 from importlib import resources
+import requests
 import random
 import io
 import os
@@ -13,18 +14,24 @@ def generate_name(gender):
     else:
         return "The entered argument is not true. Please read the documentation of this package at PYPI.org"
 
-    basedir = os.path.abspath(os.path.dirname(__file__))
+    url = "https://raw.githubusercontent.com/jadijadi/persianwords/master/"
     files = ["name_boy.txt","name_girl.txt"]
     def first_name(gender):
+        """
         with resources.open_text('fake_persian_name',files[gender]) as file:
             names = file.read().split("\n")
+        """
+        names = (requests.get(url+files[gender]).text).split("\n")
         first_name = names[random.randrange(len(names))]
 
         return first_name
     
     def last_name():
+        """
         with resources.open_text('fake_persian_name',files[gender]) as file:
             names = file.read().split("\n")
+        """
+        names = (requests.get(url+files[gender]).text).split("\n")
         last_name = names[random.randrange(len(names))]+"ی"
 
         return last_name
